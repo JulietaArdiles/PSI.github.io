@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100&family=Roboto:wght@100;300&display=swap');
+
+* {
+  margin: 0;
+  padding: 0%;
+}
+
+header {
+  width: 100%;
+  background: #ECE4E5;
+  height: 70px;
+}
+
+/* aqui estamos modificando el ancho*/
+.ancho {
+  width: 80%;
+  height: 70px;
+  margin: auto;
+}
+
+.logo {
+  width: 30%;
+  height: 70px;
+  float: left;
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+
+nav {
+  width: 70%;
+  height: 70px;
+  float: left;
+  text-align: right;
+  padding-top: 24px;
+  box-sizing: border-box;
+}
+
+.logo p a {
+  color: black;
+  font-size: 40px;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: black;
+  font-size: 13px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-left: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav ul li a:hover {
+  color: #444;
+}
+
+html {
+  font-size: 70.5%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  background: url("../img/fondo.png");
+}
+
+img {
+  align-items: right;
+  width: 650px;
+  height: auto;
+}
+
+.contenedor {
+  background: white;
+  height: 400px;
+  margin: 2rem auto;
+  text-align: left;
+  width: 400px;
+  position: absolute;
+  left: 850px;
+  top: 30%;
+  font-family: 'Roboto', sans-serif;
+}
+
+.servicios, .presentacion, .footer-content {
+  width: 80%;
+  margin: auto;
+}
+
+.titulo-servicios, .presentacion {
+  margin-bottom: 10%;
+}
+
+p {
+  font-size: 1.8rem;
+  color: #868484;
+}
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.btn, .btn-principal, .btn-secundario {
+  border: none;
+  border-radius: 2px;
+  padding: 0.7em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  transition: transform 100ms;
+}
+
+.btn:hover, .btn-principal:hover, .btn-secundario:hover {
+  transform: scale(1.1);
+}
+
+.btn-principal {
+  color: #fff;
+  background-color: #6495ED;
+}
+
+.btn-secundario {
+  background-color: #868484;
+}
+
+.presentacion {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.presentacion .flex-item2 {
+  text-align: center;
+}
+
+.presentacion h1 {
+  margin-top: 0;
+  padding-right: 20px;
+  font-size: 3rem;
+}
+
+.presentacion p {
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+
+.servicios div {
+  text-align: center;
+}
+
+.servicios .tipo-servicios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.servicios .tipo-servicios i {
+  font-size: 30px;
+  color: #6495ED;
+}
+
+footer {
+  min-height: 80px;
+  background-color: #343533;
+  margin-top: 0;
+}
+
+footer .footer-content {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+@media (min-width: 1400px) {
+  nav, .servicios, .footer-content, .presentacion {
+    width: 60%;
+    margin: auto;
+  }
+}
+@media (max-width: 992px) {
+  .presentacion, .tipo-servicios {
+    flex-direction: column;
+  }
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+}
+
+@media (max-width: 420px) {
+  .presentacion div {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  .presentacion div h1, .presentacion div p {
+    padding: 0;
+  }
+}
+
+
